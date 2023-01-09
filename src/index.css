@@ -1,13 +1,153 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
+}
+:root {
+  --bg-color: #273c66;
+  --btn-bg: #21a7d0;
+  --text-color: #394459;
+  --text-color2: #112958;
+  --text-gray: #505050;
+  --gray-bg: #f3f8f9;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+a {
+  text-decoration: none !important;
+  /* color: #fff; */
+}
+ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+.container {
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: auto;
+}
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.d-flex {
+  display: flex;
+}
+
+.btn > button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  padding: 11px 35px;
+  background: #21a7d0;
+  margin-top: 15px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+/* *********** Header Mui Button Start ************ */
+.header_support_mail .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.header_contact .MuiSvgIcon-root {
+  font-size: 1.8rem;
+}
+.login_sinup .MuiSvgIcon-root {
+  margin-right: 1.3rem;
+}
+.service_info .MuiSvgIcon-root {
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 1199px) {
+  .service_info .MuiSvgIcon-root {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service_info .MuiSvgIcon-root {
+    font-size: 5.5rem;
+  }
+}
+/* *********** Header Mui Button End ************ */
+
+/* *********** Slick slider custom edit start************ */
+.slick-arrow {
+  width: 40px !important;
+  height: 40px !important;
+  z-index: 3;
+  color: #fff !important;
+  font-size: 20px !important;
+  transition: all 0.7s !important;
+  -webkit-transition: all 0.7s !important;
+  -moz-transition: all 0.7s !important;
+  -ms-transition: all 0.7s !important;
+  -o-transition: all 0.7s !important;
+}
+.slick-arrow .MuiSvgIcon-root {
+  font-size: 2.3rem;
+}
+.slick-arrow::before,
+.slick-arrow::after {
+  display: none !important;
+}
+.slick-prev {
+  opacity: 0 !important;
+  left: 20px !important;
+}
+.slick-next {
+  opacity: 0 !important;
+  right: 20px !important;
+}
+.slider_section:hover .slick-prev {
+  opacity: 1 !important;
+  left: 45px !important;
+}
+.slider_section:hover .slick-next {
+  opacity: 1 !important;
+  right: 45px !important;
+}
+/* *********** Slick slider end************ */
