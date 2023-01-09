@@ -14,8 +14,10 @@ module.exports = {
         textColorSecondary: "#112958", //--text-color2
         textGray: "#505050", //--text-gray
         grayBg: "#f3f8f9", //--gray-bg
-        borderColor: "rgba(78, 85, 88, 0.582)",
         hover: "#23b0db",
+        // RGB color
+        borderColor: "rgba(78, 85, 88, 0.582)",
+        rgbBg: "rgba(17, 41, 88, 0.9)",
       },
     },
   },

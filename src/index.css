@@ -151,3 +151,24 @@ ul li {
   right: 45px !important;
 }
 /* *********** Slick slider end************ */
+
+/* *********** Degree Section ************ */
+
+.student-img1::before {
+  background: linear-gradient(transparent, #273c66eb);
+}
+.student-img-info > .student-info {
+  transform: translate(-50%, -50%) rotateY(-90deg);
+  -webkit-transform: translate(-50%, -50%) rotateY(-90deg);
+  -moz-transform: translate(-50%, -50%) rotateY(-90deg);
+  -ms-transform: translate(-50%, -50%) rotateY(-90deg);
+  -o-transform: translate(-50%, -50%) rotateY(-90deg);
+}
+.edcavo-student-img-info:hover .student-info {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+  -moz-transform: translate(-50%, -50%) rotateY(0deg);
+  -ms-transform: translate(-50%, -50%) rotateY(0deg);
+  -o-transform: translate(-50%, -50%) rotateY(0deg);
+}
+/* *********** Degree Section End ************ */
