@@ -6,7 +6,7 @@ import PalyVideo from "./PlayVideo/PalyVideo";
 const VideoSec = () => {
   return (
     <section className="video_section">
-      <div className="video_wrapper">
+      <div className="video_wrapper flex flex-wrap">
         <PalyVideo />
         <AdmissionC />
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@mui/material";
 import ButtonMui from "../../../../shared/ButtonMui";
 
 const AboutStd = () => {
