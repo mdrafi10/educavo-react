@@ -1,5 +1,4 @@
 import React from "react";
-import "./VideoSec.css";
 import AdmissionC from "./Admission/AdmissionC";
 import PalyVideo from "./PlayVideo/PalyVideo";
 

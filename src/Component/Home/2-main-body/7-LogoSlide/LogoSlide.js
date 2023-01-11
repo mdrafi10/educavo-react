@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./LogoSlide.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -57,14 +56,14 @@ const LogoSlide = () => {
     ],
   };
   return (
-    <section className="logo_slide">
+    <section className="logo_slide bg-[#f3f8f9] py-[7rem] lg:py-[10rem]">
       <div className="container">
         <Slider {...settings}>
           {imgs.map((img) => {
             return (
               <div key={img.id} className="slide_logo_img">
-                <NavLink to="#">
-                  <img src={img.url} alt="logo" />
+                <NavLink to="#" className="outline-none border-none">
+                  <img src={img.url} alt="logo" className="h-[33px]" />
                 </NavLink>
               </div>
             );

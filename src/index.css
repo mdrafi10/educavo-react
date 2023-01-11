@@ -176,3 +176,11 @@ ul li {
   -o-transform: translate(-50%, -50%) rotateY(0deg);
 }
 /* *********** Degree Section End ************ */
+
+/* *********** Logo Slide css start ************ */
+.logo_slide .slick-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* *********** Logo Slide css End ************ */
