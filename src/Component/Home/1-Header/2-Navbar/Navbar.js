@@ -21,6 +21,8 @@ const Navbar = () => {
     }
   };
 
+  console.log("nothing to toggle");
+
   return (
     <nav className={global.showNav ? "activeNav" : "navbar"}>
       <div className="container">
